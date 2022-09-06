@@ -6,7 +6,7 @@ function Search({ searchMovies }) {
   const [type, setType] = React.useState('all');
 
   function handleChange(evt) {
-    setSearch(evt.target.value);
+    setSearch(evt.target.value, type);
   }
 
   function handleKey(evt) {
@@ -16,8 +16,12 @@ function Search({ searchMovies }) {
   }
 
   function handleFilter(evt) {
-    setType(evt.target.dataset.type);
-    searchMovies(search, type);
+    setType(
+      () => evt.target.dataset.type,
+      () => {
+        searchMovies(search, type);
+      }
+    );
   }
 
   return (

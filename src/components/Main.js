@@ -15,9 +15,7 @@ function Main() {
 
   function searchMovies(str, type = 'all') {
     fetch(
-      `http://www.omdbapi.com/?apikey=3cf1dd28&s=${str}${
-        type !== 'all' ? `&type=${type}` : ''
-      }`
+      `http://www.omdbapi.com/?apikey=3cf1dd28&s=${str}${type !== 'all' ? `&type=${type}` : ''}`
     )
       .then((response) => response.json())
       .then((res) => setMovies(res.Search));
