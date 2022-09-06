@@ -7,8 +7,8 @@ function App() {
   return (
     <React.Fragment>
       <Header />
-      <Main/>
-      <Footer/>
+      <Main />
+      <Footer />
     </React.Fragment>
   );
 }

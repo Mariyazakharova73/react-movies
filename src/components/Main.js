@@ -13,15 +13,19 @@ function Main() {
       .then((res) => setMovies(res.Search));
   }, []);
 
-  function searchMovies(str) {
-    fetch(`http://www.omdbapi.com/?apikey=3cf1dd28&s=${str}`)
+  function searchMovies(str, type = 'all') {
+    fetch(
+      `http://www.omdbapi.com/?apikey=3cf1dd28&s=${str}${
+        type !== 'all' ? `&type=${type}` : ''
+      }`
+    )
       .then((response) => response.json())
       .then((res) => setMovies(res.Search));
   }
 
   return (
     <main className="content container">
-      <Search searchMovies={searchMovies}/>
+      <Search searchMovies={searchMovies} />
       {movies.length ? <Movies movies={movies} /> : <Preloader />}
     </main>
   );
