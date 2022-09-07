@@ -13,3 +13,5 @@
 
 * [Ссылка: "react-movies"](https://mariyazakharova73.github.io/react-movies/)
 
+<!-- API-
+https://www.omdbapi.com/ -->

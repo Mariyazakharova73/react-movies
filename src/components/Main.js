@@ -5,7 +5,6 @@ import Search from './Search';
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 function Main() {
-  //state={movies:[]}
   const [movies, setMovies] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
 

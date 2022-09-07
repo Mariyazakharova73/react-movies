@@ -16,12 +16,8 @@ function Search({ searchMovies }) {
   }
 
   function handleFilter(evt) {
-    setType(
-      () => evt.target.dataset.type,
-      () => {
-        searchMovies(search, type);
-      }
-    );
+    setType(evt.target.dataset.type);
+    searchMovies(search, evt.target.dataset.type);
   }
 
   return (
