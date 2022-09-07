@@ -11,5 +11,5 @@
 
 **Cсылка на страницу проекта**
 
-* [Ссылка: "Место"](https://mariyazakharova73.github.io/react-movies/
+* [Ссылка: "react-movies"](https://mariyazakharova73.github.io/react-movies/)
 
