@@ -11,7 +11,7 @@ function Main() {
 
   React.useEffect(() => {
     // setLoading(true);
-    fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=matrix`)
+    fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=matrix`)
       .then((response) => response.json())
       .then((res) => setMovies(res.Search))
       .catch((err) => {
@@ -25,7 +25,7 @@ function Main() {
   function searchMovies(str, type = 'all') {
     setLoading(true);
     fetch(
-      `http://www.omdbapi.com/?apikey=${API_KEY}&s=${str}${type !== 'all' ? `&type=${type}` : ''}`
+      `https://www.omdbapi.com/?apikey=${API_KEY}&s=${str}${type !== 'all' ? `&type=${type}` : ''}`
     )
       .then((response) => response.json())
       .then((res) => setMovies(res.Search))
