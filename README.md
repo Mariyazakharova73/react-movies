@@ -7,7 +7,7 @@
 
 **Описание проекта**
 
-Проект "react-movies"<br/>
+Проект "react-movies" <br/>
 API: https://www.omdbapi.com/ <br/>
 https://materializecss.com/
 
