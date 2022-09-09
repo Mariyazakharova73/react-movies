@@ -17,7 +17,6 @@
 * CSS3
 * Java Script
 * React
-* SPA
 * https://www.omdbapi.com/
 * https://materializecss.com/
 
